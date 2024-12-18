@@ -4,35 +4,35 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.intro {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.intro__img {
   width: 100%;
 }
-.aaa .more_inf {
+.intro__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .intro {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.list-form {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.list-form__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.list-form__task-wrapper {
   display: flex;
 }
 ul {
@@ -45,7 +45,7 @@ li, h3 {
 input,button{
   outline: none;
 }
-button {
+.list-form__button {
   background: none;
   border: 0px;
   color: #888;
@@ -54,12 +54,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.list-form__button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.list-form__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -68,7 +67,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.list-form__task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,7 +79,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.list-form__task:focus {
   color: #333;
 }
 
@@ -98,7 +97,6 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,12 +117,12 @@ li > label {
 li >  input[type="text"] {
   width: 226px;
 }
-button.delete img {
+.list-form__button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.list-form__button_delete img:hover {
   transform: rotateZ(0);
 }
 
